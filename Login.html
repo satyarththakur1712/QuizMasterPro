@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login — QuizMaster Pro</title>
+    <meta name="description" content="Sign in to QuizMaster Pro to access quizzes, leaderboards and your progress." />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">QuizMaster Pro</div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="Project.html">Home</a>
+        <a href="Project.html#features">Features</a>
+      </nav>
+    </header>
+
+    <main class="auth-page">
+      <section class="auth-card card" aria-labelledby="login-title">
+        <h2 id="login-title">Sign in to QuizMaster Pro</h2>
+        <p class="lead">Access quizzes, track progress, and compete on leaderboards.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required placeholder="Enter your password" minlength="6">
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Sign In</button>
+            <a href="Project.html" class="btn ghost">Continue as Guest</a>
+          </div>
+
+          <p class="muted small">Don't have an account? <a href="#">Sign up</a></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
