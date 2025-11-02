@@ -1,84 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>QuizMaster Pro</title>
-		<meta name="description" content="QuizMaster Pro  interactive quizzes, instant feedback, leaderboards, and progress tracking. Learn, compete, and improve across Science, History, Tech, and more." />
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<header class="site-header">
-			<div class="brand">QuizMaster Pro</div>
-			<nav class="site-nav" aria-label="Main navigation">
-				<a href="#features">Features</a>
-				<a href="#how">How it works</a>
-				<a href="#contact">Contact</a>
-			</nav>
-		</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QuizMaster Pro</title>
+    <meta
+      name="description"
+      content="QuizMaster Pro  interactive quizzes, instant feedback, leaderboards, and progress tracking. Learn, compete, and improve across Science, History, Tech, and more."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .score-alert {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #28a745;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        animation: slideIn 0.5s ease-out;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- JavaScript removed per request: score display will be static without dynamic update -->
+    <header class="site-header">
+      <div class="brand">QuizMaster Pro</div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-		<main>
-			<section class="hero" aria-labelledby="hero-title">
-				<div class="hero-copy">
-					<h1 id="hero-title">Master Any Topic with QuizMaster Pro</h1>
-					<p class="lead">From classroom practice to friendly competitions — quizzes across Science, History, Tech and more with progress tracking and instant feedback.</p>
-					<div class="ctas">
-						<a href="Login.html" class="btn primary">Get Started — It's Free</a>
-						<a href="#features" class="btn ghost">Browse Quizzes</a>
-					</div>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Master Any Topic with QuizMaster Pro</h1>
+          <p class="lead">
+            From classroom practice to friendly competitions — quizzes across
+            Science, History, Tech and more with progress tracking and instant
+            feedback.
+          </p>
+          <div class="ctas">
+            <a href="Login.html" class="btn primary">Get Started — It's Free</a>
+            <a href="#features" class="btn ghost">Browse Quizzes</a>
+          </div>
 
-					<div class="trusted">
-						<strong>Trusted for learning by:</strong>
-						<span>Schools · Bootcamps · Professionals · Learners</span>
-					</div>
-				</div>
+          <div class="trusted">
+            <strong>Trusted for learning by:</strong>
+            <span>Schools · Bootcamps · Professionals · Learners</span>
+          </div>
+        </div>
+        <!-- Quick quiz card removed as requested -->
+      </section>
 
-				<aside class="card" aria-label="sample quiz card">
-					<h3>Quick Quiz: World Capitals</h3>
-					<div class="card-meta">
-						<div class="meta-info">10 Questions • 5 mins</div>
-						<div class="meta-score">Score: <span class="score-val">0</span></div>
-					</div>
-					<div class="topics" aria-hidden="true">
-						<div class="topic-pill">Geography</div>
-						<div class="topic-pill">Beginner</div>
-						<div class="topic-pill">Timed</div>
-					</div>
-					<div class="card-actions">
-						<a href="#" class="btn primary small">Start Quiz</a>
-						<a href="#" class="btn ghost small">Preview</a>
-					</div>
-				</aside>
-			</section>
+      <section id="features" class="features" aria-label="platform features">
+        <div class="feature">
+          <h4>Instant Feedback</h4>
+          <p>
+            Understand why an answer is right or wrong with detailed
+            explanations and references.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Adaptive Difficulty</h4>
+          <p>
+            Quizzes adjust to your level so every session is the right amount of
+            challenge.
+          </p>
+        </div>
+        <div class="feature">
+          <h4>Leaderboards & Badges</h4>
+          <p>
+            Compete with friends or classmates and earn badges for streaks and
+            achievements.
+          </p>
+        </div>
+      </section>
 
-			<section id="features" class="features" aria-label="platform features">
-				<div class="feature">
-					<h4>Instant Feedback</h4>
-					<p>Understand why an answer is right or wrong with detailed explanations and references.</p>
-				</div>
-				<div class="feature">
-					<h4>Adaptive Difficulty</h4>
-					<p>Quizzes adjust to your level so every session is the right amount of challenge.</p>
-				</div>
-				<div class="feature">
-					<h4>Leaderboards & Badges</h4>
-					<p>Compete with friends or classmates and earn badges for streaks and achievements.</p>
-				</div>
-			</section>
+      <section id="how" class="how-it-works">
+        <h3>How it works</h3>
+        <ol>
+          <li>Create a free account or try a guest quiz</li>
+          <li>Pick a category and difficulty</li>
+          <li>Answer questions, get instant feedback, and track progress</li>
+        </ol>
+      </section>
+    </main>
 
-			<section id="how" class="how-it-works">
-				<h3>How it works</h3>
-				<ol>
-					<li>Create a free account or try a guest quiz</li>
-					<li>Pick a category and difficulty</li>
-					<li>Answer questions, get instant feedback, and track progress</li>
-				</ol>
-			</section>
-		</main>
-
-		<footer class="site-footer">
-			<div>© QuizMaster Pro — Built for curious minds.</div>
-			<div class="footer-links"><a href="#contact">Contact</a> · <a href="#">Privacy</a></div>
-		</footer>
-	</body>
+    <footer class="site-footer">
+      <div>© QuizMaster Pro — Built for curious minds.</div>
+      <div class="footer-links">
+        <a href="#contact">Contact</a> · <a href="#">Privacy</a>
+      </div>
+    </footer>
+  </body>
 </html>
+
