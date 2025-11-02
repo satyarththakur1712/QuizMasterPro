@@ -1,283 +1,277 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Math Quiz - Class 10</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      .quiz-container {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 2rem;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      }
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mathematics Quiz - Class 10</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          .quiz-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          }
+          .quiz-container h1 {
+            color: #111;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 1.25rem;
+          }
+          .question {
+            margin-bottom: 1.25rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+          }
+          .question h3 {
+            margin: 0 0 0.5rem 0;
+            color: #1a1a1a;
+          }
+          .question p {
+            margin: 0 0 0.75rem 0;
+            color: #333;
+          }
+          .options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+          .option {
+            padding: 0.6rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #111;
+          }
+          .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 0.9rem;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+          }
+          .btn-submit:hover {
+            background: #218838;
+          }
+          input[type="radio"] {
+            margin-right: 0.6rem;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="quiz-container">
+          <h1>Mathematics Quiz - Class 10</h1>
+          <form action="project.html" method="get">
+            <div class="question">
+              <h3>1. Solve for x: 2x² + 5x - 3 = 0</h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q1" value="a" /> a) x = -3 and x =
+                  0.5</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q1" value="b" /> b) x = 0.5 and x =
+                  -3.5</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q1" value="c" /> c) x = 1 and x =
+                  -3</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q1" value="d" /> d) x = 2 and x =
+                  -3.5</label
+                >
+              </div>
+            </div>
 
-      .quiz-container h1 {
-        color: #111;
-        font-size: 1.8rem;
-        text-align: center;
-        margin-bottom: 1.25rem;
-      }
+            <div class="question">
+              <h3>
+                2. In a triangle ABC, if sin A = 0.5, then angle A is equal to:
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q2" value="a" /> a) 45°</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q2" value="b" /> b) 30°</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q2" value="c" /> c) 60°</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q2" value="d" /> d) 90°</label
+                >
+              </div>
+            </div>
 
-      .question {
-        margin-bottom: 1.25rem;
-        padding: 1rem;
-        background: #f8f9fa;
-        border-radius: 8px;
-      }
+            <div class="question">
+              <h3>
+                3. The area of a circle is 154 sq cm. Find its radius (π = 22/7)
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q3" value="a" /> a) 7 cm</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q3" value="b" /> b) 14 cm</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q3" value="c" /> c) 11 cm</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q3" value="d" /> d) 5 cm</label
+                >
+              </div>
+            </div>
 
-      .question h3 {
-        margin: 0 0 0.5rem 0;
-        color: #1a1a1a;
-      }
+            <div class="question">
+              <h3>
+                4. If the arithmetic mean of 2, x, 6, 10 is 7, then x equals:
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q4" value="a" /> a) 8</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q4" value="b" /> b) 10</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q4" value="c" /> c) 4</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q4" value="d" /> d) 6</label
+                >
+              </div>
+            </div>
 
-      .options {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
+            <div class="question">
+              <h3>
+                5. The discriminant of 2x² - 4x + k = 0 is zero. The value of k
+                is:
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q5" value="a" /> a) 1</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q5" value="b" /> b) 2</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q5" value="c" /> c) 3</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q5" value="d" /> d) 4</label
+                >
+              </div>
+            </div>
 
-      .option {
-        padding: 0.6rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        cursor: pointer;
-        display: block;
-      }
+            <div class="question">
+              <h3>
+                6. If the sum of first n terms of an AP is n², then common
+                difference is:
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q6" value="a" /> a) n</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q6" value="b" /> b) 2n</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q6" value="c" /> c) 1</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q6" value="d" /> d) 2</label
+                >
+              </div>
+            </div>
 
-      .option:hover {
-        background: #f0f0f0;
-      }
+            <div class="question">
+              <h3>7. The value of cos²45° + sin²45° is:</h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q7" value="a" /> a) 1</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q7" value="b" /> b) 2</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q7" value="c" /> c) 0</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q7" value="d" /> d) √2</label
+                >
+              </div>
+            </div>
 
-      .btn-submit {
-        display: block;
-        width: 100%;
-        padding: 0.9rem;
-        background: #28a745;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-top: 2rem;
-      }
+            <div class="question">
+              <h3>
+                8. Perimeter of triangle with vertices (0,0),(4,0),(0,3) is:
+              </h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q8" value="a" /> a) 7</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q8" value="b" /> b) 10</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q8" value="c" /> c) 12</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q8" value="d" /> d) 15</label
+                >
+              </div>
+            </div>
 
-      .btn-submit:hover {
-        background: #218838;
-      }
+            <div class="question">
+              <h3>9. Probability of getting sum 8 with two dice is:</h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q9" value="a" /> a) 1/12</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q9" value="b" /> b) 5/36</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q9" value="c" /> c) 1/6</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q9" value="d" /> d) 7/36</label
+                >
+              </div>
+            </div>
 
-      input[type="radio"] {
-        margin-right: 0.6rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="quiz-container">
-      <h1>Mathematics Quiz - Class 10</h1>
-      <form action="project.html" method="get">
-        <div class="question">
-          <h3>Question 1:</h3>
-          <p>Solve for x: 2x² + 5x - 3 = 0</p>
-          <div class="options">
-            <label class="option">
-              <input type="radio" name="q1" value="a" required />
-              a) x = -3 and x = 0.5
-            </label>
-            <label class="option">
-              <input type="radio" name="q1" value="b" />
-              b) x = 0.5 and x = -3.5
-            </label>
-            <label class="option">
-              <input type="radio" name="q1" value="c" />
-              c) x = 1 and x = -3
-            </label>
-            <label class="option">
-              <input type="radio" name="q1" value="d" />
-              d) x = 2 and x = -3.5
-            </label>
-          </div>
+            <div class="question">
+              <h3>10. Distance between (2,-3) and (4,5) is:</h3>
+              <div class="options">
+                <label class="option"
+                  ><input type="radio" name="q10" value="a" /> a) √68</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q10" value="b" /> b) √34</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q10" value="c" /> c) 10</label
+                >
+                <label class="option"
+                  ><input type="radio" name="q10" value="d" /> d) 8</label
+                >
+              </div>
+            </div>
+
+            <button class="btn-submit" type="submit">Submit Quiz</button>
+          </form>
         </div>
-        <div class="question">
-          <h3>Question 2:</h3>
-          <p>In a triangle ABC, if sin A = 0.5, then angle A is equal to:</p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q2" value="a" /> a) 45°</label
-            >
-            <label class="option"
-              ><input type="radio" name="q2" value="b" /> b) 30°</label
-            >
-            <label class="option"
-              ><input type="radio" name="q2" value="c" /> c) 60°</label
-            >
-            <label class="option"
-              ><input type="radio" name="q2" value="d" /> d) 90°</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 3:</h3>
-          <p>
-            The area of a circle is 154 square cm. Find its radius (Take π =
-            22/7)
-          </p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q3" value="a" /> a) 7 cm</label
-            >
-            <label class="option"
-              ><input type="radio" name="q3" value="b" /> b) 14 cm</label
-            >
-            <label class="option"
-              ><input type="radio" name="q3" value="c" /> c) 11 cm</label
-            >
-            <label class="option"
-              ><input type="radio" name="q3" value="d" /> d) 5 cm</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 4:</h3>
-          <p>If the arithmetic mean of 2, x, 6, 10 is 7, then x equals:</p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q4" value="a" /> a) 8</label
-            >
-            <label class="option"
-              ><input type="radio" name="q4" value="b" /> b) 10</label
-            >
-            <label class="option"
-              ><input type="radio" name="q4" value="c" /> c) 4</label
-            >
-            <label class="option"
-              ><input type="radio" name="q4" value="d" /> d) 6</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 5:</h3>
-          <p>
-            The discriminant of the quadratic equation 2x² - 4x + k = 0 is zero.
-            The value of k is:
-          </p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q5" value="a" /> a) 1</label
-            >
-            <label class="option"
-              ><input type="radio" name="q5" value="b" /> b) 2</label
-            >
-            <label class="option"
-              ><input type="radio" name="q5" value="c" /> c) 3</label
-            >
-            <label class="option"
-              ><input type="radio" name="q5" value="d" /> d) 4</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 6:</h3>
-          <p>
-            If the sum of the first n terms of an AP is n², then its common
-            difference is:
-          </p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q6" value="a" /> a) n</label
-            >
-            <label class="option"
-              ><input type="radio" name="q6" value="b" /> b) 2n</label
-            >
-            <label class="option"
-              ><input type="radio" name="q6" value="c" /> c) 1</label
-            >
-            <label class="option"
-              ><input type="radio" name="q6" value="d" /> d) 2</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 7:</h3>
-          <p>The value of cos²45° + sin²45° is:</p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q7" value="a" /> a) 1</label
-            >
-            <label class="option"
-              ><input type="radio" name="q7" value="b" /> b) 2</label
-            >
-            <label class="option"
-              ><input type="radio" name="q7" value="c" /> c) 0</label
-            >
-            <label class="option"
-              ><input type="radio" name="q7" value="d" /> d) √2</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 8:</h3>
-          <p>
-            The perimeter of a triangle with vertices (0,0), (4,0) and (0,3) is:
-          </p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q8" value="a" /> a) 7</label
-            >
-            <label class="option"
-              ><input type="radio" name="q8" value="b" /> b) 10</label
-            >
-            <label class="option"
-              ><input type="radio" name="q8" value="c" /> c) 12</label
-            >
-            <label class="option"
-              ><input type="radio" name="q8" value="d" /> d) 15</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 9:</h3>
-          <p>
-            The probability of getting a sum of 8 when two dice are thrown is:
-          </p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q9" value="a" /> a) 1/12</label
-            >
-            <label class="option"
-              ><input type="radio" name="q9" value="b" /> b) 5/36</label
-            >
-            <label class="option"
-              ><input type="radio" name="q9" value="c" /> c) 1/6</label
-            >
-            <label class="option"
-              ><input type="radio" name="q9" value="d" /> d) 7/36</label
-            >
-          </div>
-        </div>
-        <div class="question">
-          <h3>Question 10:</h3>
-          <p>The distance between the points (2,-3) and (4,5) is:</p>
-          <div class="options">
-            <label class="option"
-              ><input type="radio" name="q10" value="a" /> a) √68</label
-            >
-            <label class="option"
-              ><input type="radio" name="q10" value="b" /> b) √34</label
-            >
-            <label class="option"
-              ><input type="radio" name="q10" value="c" /> c) 10</label
-            >
-            <label class="option"
-              ><input type="radio" name="q10" value="d" /> d) 8</label
-            >
-          </div>
-        </div>
-        <button class="btn-submit" type="submit">Submit Quiz</button>
-      </form>
-    </div>
+      </body>
+    </html>
+    a: "b",
   </head>
 </html>
-
