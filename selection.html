@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subject Selection — QuizMaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .subjects-container {
+        max-width: 700px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      }
+      .subjects-container h1 {
+        font-size: 2.5rem;
+        color: #1a1a1a;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-weight: 700;
+      }
+      .subjects-container p {
+        font-size: 1.2rem;
+        color: #2c3e50;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 500;
+      }
+      .subjects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .subject-card {
+        padding: 1rem 1.25rem;
+        border-radius: 8px;
+        background: #f7f9fb;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #e6eef6;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+      .subject-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      }
+      .subject-card a {
+        display: block;
+        color: #12263a;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0.75rem 0;
+      }
+      .subject-card.demo a {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">QuizMaster Pro</div>
+    </header>
+
+    <main>
+      <div class="subjects-container">
+        <h1>Select a Subject</h1>
+        <p>
+          Choose your preferred subject below to begin your interactive quiz
+          journey!
+        </p>
+        <div class="subjects-grid">
+          <div class="subject-card">
+            <a href="quiz.html?subject=Mathematics">Mathematics</a>
+          </div>
+          <div class="subject-card">
+            <a href="quiz.html?subject=English">English</a>
+          </div>
+          <div class="subject-card">
+            <a href="quiz.html?subject=Science">Science</a>
+          </div>
+          <div class="subject-card">
+            <a href="quiz.html?subject=History">History</a>
+          </div>
+          <div class="subject-card">
+            <a href="quiz.html?subject=Geography">Geography</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
