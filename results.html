@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Results — QuizMaster Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">QuizMaster Pro</div>
+    </header>
+
+    <main>
+      <section class="results-container">
+        <h1>Quiz Results</h1>
+        <div id="results"></div>
+        <div style="margin-top:18px">
+          <a href="Project.html" class="btn ghost">Return Home</a>
+          <a href="selection.html" class="btn primary">Take Another Quiz</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        let raw = null;
+        try {
+          raw = sessionStorage.getItem('quizResult');
+        } catch (e) {
+          console.warn(e);
+        }
+        const container = document.getElementById('results');
+        if (!raw) {
+          container.innerHTML = '<p class="muted">No results found. Try taking a quiz first.</p>';
+          return;
+        }
+        const result = JSON.parse(raw);
+        const { total, correct, percent, detail } = result;
+
+        const header = document.createElement('div');
+        header.className = 'result-summary card';
+        header.innerHTML = '<h2>Score: ' + correct + ' / ' + total + '</h2>' +
+          '<p class="lead">Percentage: ' + percent + '%</p>';
+
+        const list = document.createElement('div');
+        list.className = 'result-list card';
+
+        detail.forEach((d, i) => {
+          const row = document.createElement('div');
+          row.className = 'result-row';
+          const q = document.createElement('div');
+          q.textContent = 'Question ' + (i + 1);
+          const s = document.createElement('div');
+          s.innerHTML = '<strong>' + (d.ok ? 'Correct' : 'Wrong') + '</strong>' +
+            '<div class="muted small">Your answer: ' + (d.user || '—') + ' &middot; Correct: ' + d.correct + '</div>';
+          row.appendChild(q);
+          row.appendChild(s);
+          list.appendChild(row);
+        });
+
+        container.appendChild(header);
+        container.appendChild(list);
+      })();
+    </script>
+  </body>
+</html>
